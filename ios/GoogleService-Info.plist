@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>526845404974-24v2jnt2u42kor9s13sbmb8s5ma2b7pb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.526845404974-24v2jnt2u42kor9s13sbmb8s5ma2b7pb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAms8U9rbvbQ2SinqrJj9XQ9yoACczJmA0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>526845404974</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.phozee.festivalsquad</string>
+	<key>PROJECT_ID</key>
+	<string>festival-squad</string>
+	<key>STORAGE_BUCKET</key>
+	<string>festival-squad.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:526845404974:ios:4ab1141f99009ad6</string>
+	<key>DATABASE_URL</key>
+	<string>https://festival-squad.firebaseio.com</string>
+</dict>
+</plist>

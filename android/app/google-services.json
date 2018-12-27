@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "526845404974",
+    "firebase_url": "https://festival-squad.firebaseio.com",
+    "project_id": "festival-squad",
+    "storage_bucket": "festival-squad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526845404974:android:4ab1141f99009ad6",
+        "android_client_info": {
+          "package_name": "com.phozee.festivalsquad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526845404974-2v1j7er1ln5v4btlhfthg3sgk7d57r56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3GkSIIN1kGh4i62MaAt7I_GkA_fHRj0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
