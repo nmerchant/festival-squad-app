@@ -1,29 +1,44 @@
 {
-  "name": "festivalsquad",
-  "version": "5.1.0",
-  "private": true,
-  "devDependencies": {
-    "babel-jest": "23.6.0",
-    "fs-extra": "^6.0.1",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.48.0",
-    "react-test-renderer": "16.5.0",
-    "replace-in-file": "^3.4.0"
-  },
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "apk": "cd android && ./gradlew assembleRelease",
-    "rename": "node ./bin/rename.js",
-    "start": "react-native start",
-    "test": "jest"
-  },
-  "jest": {
-    "preset": "react-native"
-  },
-  "dependencies": {
-    "react": "16.5.0",
-    "react-native": "0.57.1",
-    "react-native-firebase": "^5.1.1"
-  }
+    "name": "festivalsquad",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "android": "react-native run-android",
+        "ios": "react-native run-ios",
+        "apk": "cd android && ./gradlew assembleRelease",
+        "start": "react-native start",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "babel-jest": "23.6.0",
+        "fs-extra": "^6.0.1",
+        "jest": "23.6.0",
+        "metro-react-native-babel-preset": "0.48.0",
+        "react-test-renderer": "16.5.0",
+        "replace-in-file": "^3.4.0"
+    },
+    "dependencies": {
+        "body-parser": "^1.13.2",
+        "config": "^1.29.4",
+        "ejs": "^2.3.3",
+        "lodash": "^4.17.5",
+        "moment": "^2.20.1",
+        "react": "16.5.0",
+        "react-native": "0.57.1",
+        "react-native-firebase": "^5.1.1",
+        "react-native-elements": "1.0.0-beta5",
+        "react-native-fbsdk": "^0.8.0",
+        "react-native-vector-icons": "^4.5.0",
+        "react-navigation": "^1.2.1",
+        "react-native-fetch-blob": "^0.10.2",
+        "react-native-image-picker": "latest"
+    },
+    "rnpm": {
+        "assets": [
+            "./assets/fonts"
+        ]
+    },
+    "jest": {
+        "preset": "react-native"
+    }
 }

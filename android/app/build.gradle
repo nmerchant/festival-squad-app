@@ -154,6 +154,11 @@ android {
 }
 
 dependencies {
+  compile project(':react-native-image-picker')
+  compile project(':react-native-fetch-blob')
+  compile project(':react-native-vector-icons')
+  compile project(':react-native-fbsdk')
+  compile project(':react-native-firebase')
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation fileTree(dir: "libs", include: ["*.jar"])
