@@ -1,0 +1,322 @@
+{
+ "data": [
+  {
+   "name": "North Coast Music Festival 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/north-coast-music-festival-2018/",
+   "state": "Chicago",
+   "state_url": "https://www.musicfestivalwizard.com/festival-guide/chicago/",
+   "website": "Official Website",
+   "website_url": "http://northcoastfestival.com/"
+  },
+  {
+   "name": "Hopscotch Festival 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/hopscotch-festival-2018/",
+   "website": "Official Website",
+   "website_url": "http://hopscotchmusicfest.com/"
+  },
+  {
+   "name": "Dancefestopia 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/dancefestopia-2018/",
+   "artists": [
+    {
+     "name": "DATSIK"
+    },
+    {
+     "name": "Flux Pavilion"
+    },
+    {
+     "name": "ILLENIUM"
+    },
+    {
+     "name": "REZZ"
+    },
+    {
+     "name": "SNAILS"
+    },
+    {
+     "name": "Zeds Dead"
+    },
+    {
+     "name": "12TH PLANET"
+    },
+    {
+     "name": "ARIUS"
+    },
+    {
+     "name": "ATLIENS"
+    },
+    {
+     "name": "BEAR GRILLZ"
+    },
+    {
+     "name": "BTSM"
+    },
+    {
+     "name": "BOOGIE T"
+    },
+    {
+     "name": "BUKU"
+    },
+    {
+     "name": "CARBIN"
+    },
+    {
+     "name": "COOKIE MONSTA"
+    },
+    {
+     "name": "CRANKDAT"
+    },
+    {
+     "name": "DOCTOR P"
+    },
+    {
+     "name": "FUNTCASE"
+    },
+    {
+     "name": "HE$H"
+    },
+    {
+     "name": "HEKLER"
+    },
+    {
+     "name": "HEROBUST"
+    },
+    {
+     "name": "HI I’M GHOST"
+    },
+    {
+     "name": "JUNKIE KID"
+    },
+    {
+     "name": "KAI WACHI"
+    },
+    {
+     "name": "KILL THE NOISE"
+    },
+    {
+     "name": "KOMPANY"
+    },
+    {
+     "name": "MAD ZACH"
+    },
+    {
+     "name": "MANIC FOCUS"
+    },
+    {
+     "name": "MIDNIGHT T"
+    },
+    {
+     "name": "MINNESOTA"
+    },
+    {
+     "name": "P0GMAN"
+    },
+    {
+     "name": "RAY VOLPE"
+    },
+    {
+     "name": "RUSKO"
+    },
+    {
+     "name": "SAID THE SKY"
+    },
+    {
+     "name": "SPACE JESUS"
+    },
+    {
+     "name": "SPOCK"
+    },
+    {
+     "name": "SQUNTO"
+    },
+    {
+     "name": "SULLIVAN KING"
+    },
+    {
+     "name": "SVDDEN DEATH"
+    },
+    {
+     "name": "TROLLPHACE"
+    },
+    {
+     "name": "TYNAN"
+    },
+    {
+     "name": "VINCENT"
+    },
+    {
+     "name": "WUKI"
+    },
+    {
+     "name": "YOOKIE"
+    },
+    {
+     "name": "808 GNARLY"
+    },
+    {
+     "name": "ACER VANTES"
+    },
+    {
+     "name": "ALTITUNED"
+    },
+    {
+     "name": "ALWAYS420"
+    },
+    {
+     "name": "AXILON"
+    },
+    {
+     "name": "BANDIKOOK"
+    },
+    {
+     "name": "BOBBY BOHN"
+    },
+    {
+     "name": "BOSS MODE"
+    },
+    {
+     "name": "BVNVNVS"
+    },
+    {
+     "name": "CURTIS GREEN"
+    },
+    {
+     "name": "DJERK"
+    },
+    {
+     "name": "DJTUTT"
+    },
+    {
+     "name": "DON MEGA"
+    },
+    {
+     "name": "FILTHY TRACE"
+    },
+    {
+     "name": "GREEN LUCY"
+    },
+    {
+     "name": "GUHMI"
+    },
+    {
+     "name": "HODJ"
+    },
+    {
+     "name": "JESSE ALDRIDGE"
+    },
+    {
+     "name": "JWIN"
+    },
+    {
+     "name": "KASA NOVA"
+    },
+    {
+     "name": "KRAANG"
+    },
+    {
+     "name": "LEKTRIK"
+    },
+    {
+     "name": "LODURR"
+    },
+    {
+     "name": "LONGER DAYS"
+    },
+    {
+     "name": "LOTEMP"
+    },
+    {
+     "name": "MATEJ B"
+    },
+    {
+     "name": "MICRODOT"
+    },
+    {
+     "name": "P H N M N N"
+    },
+    {
+     "name": "PIZZA PROPHET"
+    },
+    {
+     "name": "PROPER GRAMMAR"
+    },
+    {
+     "name": "SALTY"
+    },
+    {
+     "name": "SHATTER WORMS"
+    },
+    {
+     "name": "SKURVE"
+    },
+    {
+     "name": "SNAFU"
+    },
+    {
+     "name": "STONEGOOD"
+    },
+    {
+     "name": "STRAP BACK"
+    },
+    {
+     "name": "SYMBOLTON"
+    },
+    {
+     "name": "THE DOJO"
+    },
+    {
+     "name": "TREEPEOH"
+    },
+    {
+     "name": "VIVALABERG"
+    }
+   ],
+   "website": "Official Website",
+   "website_url": "http://www.dancefestopia.com/"
+  },
+  {
+   "name": "KAABOO 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/kaaboo-2018/",
+   "state": "California",
+   "state_url": "https://www.musicfestivalwizard.com/festival-guide/california/",
+   "website": "Official Website",
+   "website_url": "http://www.kaabooexperience.com/"
+  },
+  {
+   "name": "Imagine Festival 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/imagine-festival-2018/",
+   "website": "Official Website",
+   "website_url": "http://www.imaginefestival.com/"
+  },
+  {
+   "name": "Austin City Limits 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/austin-city-limits-2018/",
+   "state": "Austin",
+   "state_url": "https://www.musicfestivalwizard.com/festival-guide/austin/",
+   "website": "Official Website",
+   "website_url": "http://www.aclfestival.com/"
+  },
+  {
+   "name": "Voodoo Experience 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/voodoo-experience-2018/",
+   "state": "New Orleans",
+   "state_url": "https://www.musicfestivalwizard.com/festival-guide/new-orleans/",
+   "website": "Official Website",
+   "website_url": "https://www.voodoofestival.com/"
+  },
+  {
+   "name": "UtopiaFest 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/utopiafest-2018/",
+   "website": "Official Website",
+   "website_url": "http://www.utopiafest.com/"
+  },
+  {
+   "name": "Snowglobe 2018",
+   "url": "https://www.musicfestivalwizard.com/festivals/snowglobe-2018/",
+   "state": "California",
+   "state_url": "https://www.musicfestivalwizard.com/festival-guide/california/",
+   "website": "Official Website",
+   "website_url": "http://snowglobemusicfestival.com/"
+  }
+ ]
+}

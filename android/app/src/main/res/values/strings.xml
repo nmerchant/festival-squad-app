@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">festivalsquad</string>
+    <string name="facebook_app_id">537952789986494</string>
+    <string name="fb_login_protocol_scheme">fb537952789986494</string>
 </resources>
