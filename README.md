@@ -18,7 +18,7 @@ $ cd ios && pod install
 
 ### Run on iOS
 
-This should auto-launch an iPhone X emulator (keyword should).
+This should auto-launch an iPhone emulator (keyword should).
 
 ```
 $ react-native run-ios
@@ -38,15 +38,19 @@ The device should now be able to be run manually from AVD Manager or from the Te
 $ react-native run-android
 ```
 
+If you encounter any errors, try a rebuild:
+```
+cd android && ./gradlew clean && cd .. && react-native run-android
+```
+
 ### Issues and Solutions
 
-* Random weird issues when building on Android for any reason - `cd android && ./gradlew clean`
 * `permission denied: gradlew` - `cd android && chmod +x gradlew`
 * `Could not install the app on the device, read the error above for details.` - `cd android && chmod 755 gradlew` - https://github.com/facebook/react-native/issues/8868
 * `grpc cpu.h file not found` - downgrade node. v8.5.0 works.
 * Debugger UI fails to connect at 10.2.2.2 - use `localhost` instead of that IP.  Not sure why the emulator doesn't open the right url automatically.
 
-### Troubleshooting Android Build Errors (Missing Package Links)
+## Troubleshooting Android Build Errors (Missing Package Links)
 
 If the error looks like the Android build is failing to find a newly added dependency, it may not have been imported correctly into the project.  Running `$ react-native-link <package>` is supposed to work, but sometimes it doesn't.  So go through and manually make sure the the following lines are in place (using Firebase as an example):
 
@@ -70,6 +74,7 @@ new RNFirebasePackage(),
 * Paging for all routes that may eventually need it (i.e. user friends)
 * I want to track a list of events I'm going to, but I also want a # of users going for each event.  Currently writing transactions to store rsvp to user object and increment counter on event object.  This means data modified / deleted from user record would create concurrency problems.  But maybe this should fully tie this to the event object?
 * What can we use cloud functions for?
+* Figure out why `android/gradlew clean` doesn't work.  Have to `cd android && ./gradlew clean`
 
 ## Future Stuff, References, More Reading
 
