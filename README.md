@@ -2,8 +2,10 @@
 
 ## Project Docs
 
+* Notes: https://docs.google.com/document/d/1X9YFI7v6G4ffim3kHX0XRGTfYknMmNwBD42iO4xVXJM/edit?usp=sharing
 * Trello: http://trello.com/b/HcDagP7z/vybe
 * Firebase: https://console.firebase.google.com/u/0/project/vybe-fest/overview
+* Festival Database: https://docs.google.com/spreadsheets/d/1SRwi0d8hT4bQkkm-gk6-kfBfsvvvv_Acy7Jx4nK0XNk/edit?usp=sharing
 
 ## Code Stuff
 
@@ -44,7 +46,7 @@ $ react-native run-android
 * `grpc cpu.h file not found` - downgrade node. v8.5.0 works.
 * Debugger UI fails to connect at 10.2.2.2 - use `localhost` instead of that IP.  Not sure why the emulator doesn't open the right url automatically.
 
-### Troubleshooting Android Build Errors
+### Troubleshooting Android Build Errors (Missing Package Links)
 
 If the error looks like the Android build is failing to find a newly added dependency, it may not have been imported correctly into the project.  Running `$ react-native-link <package>` is supposed to work, but sometimes it doesn't.  So go through and manually make sure the the following lines are in place (using Firebase as an example):
 
@@ -67,6 +69,7 @@ new RNFirebasePackage(),
 * Firebase offline sync: https://firebase.google.com/docs/firestore/manage-data/enable-offline
 * Paging for all routes that may eventually need it (i.e. user friends)
 * I want to track a list of events I'm going to, but I also want a # of users going for each event.  Currently writing transactions to store rsvp to user object and increment counter on event object.  This means data modified / deleted from user record would create concurrency problems.  But maybe this should fully tie this to the event object?
+* What can we use cloud functions for?
 
 ## Future Stuff, References, More Reading
 
