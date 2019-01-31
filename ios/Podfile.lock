@@ -1,4 +1,10 @@
 PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
   - BoringSSL (10.0.6):
     - BoringSSL/Implementation (= 10.0.6)
     - BoringSSL/Interface (= 10.0.6)
@@ -8,6 +14,12 @@ PODS:
   - Crashlytics (3.10.9):
     - Fabric (~> 1.7.13)
   - Fabric (1.7.13)
+  - FBSDKCoreKit (4.39.0):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.39.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.39.0):
+    - FBSDKCoreKit
   - Firebase/AdMob (5.11.0):
     - Firebase/Core
     - Google-Mobile-Ads-SDK (~> 7.35)
@@ -192,10 +204,46 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
+  - React (0.57.1):
+    - React/Core (= 0.57.1)
+  - react-native-fbsdk (0.8.0):
+    - React
+    - react-native-fbsdk/Core (= 0.8.0)
+    - react-native-fbsdk/Login (= 0.8.0)
+    - react-native-fbsdk/Share (= 0.8.0)
+  - react-native-fbsdk/Core (0.8.0):
+    - FBSDKCoreKit
+    - React
+  - react-native-fbsdk/Login (0.8.0):
+    - FBSDKLoginKit
+    - React
+  - react-native-fbsdk/Share (0.8.0):
+    - FBSDKShareKit
+    - React
+  - react-native-fetch-blob (0.10.6):
+    - React/Core
+  - react-native-image-picker (0.27.2):
+    - React
+  - React/Core (0.57.1):
+    - yoga (= 0.57.1.React)
+  - React/DevSupport (0.57.1):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.57.1)
+  - React/RCTBlob (0.57.1):
+    - React/Core
+  - React/RCTNetwork (0.57.1):
+    - React/Core
+  - React/RCTWebSocket (0.57.1):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - yoga (0.57.1.React)
 
 DEPENDENCIES:
   - Crashlytics (~> 3.10.9)
   - Fabric (~> 1.7.13)
+  - FBSDKLoginKit
   - Firebase/AdMob (~> 5.11.0)
   - Firebase/Auth (~> 5.11.0)
   - Firebase/Core (~> 5.11.0)
@@ -207,12 +255,22 @@ DEPENDENCIES:
   - Firebase/Performance (~> 5.11.0)
   - Firebase/RemoteConfig (~> 5.11.0)
   - Firebase/Storage (~> 5.11.0)
+  - react-native-fbsdk (from `../node_modules/react-native-fbsdk`)
+  - react-native-fetch-blob (from `../node_modules/react-native-fetch-blob`)
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Bolts
     - BoringSSL
     - Crashlytics
     - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -243,10 +301,26 @@ SPEC REPOS:
     - nanopb
     - Protobuf
 
+EXTERNAL SOURCES:
+  React:
+    :path: "../node_modules/react-native"
+  react-native-fbsdk:
+    :path: "../node_modules/react-native-fbsdk"
+  react-native-fetch-blob:
+    :path: "../node_modules/react-native-fetch-blob"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
   Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
+  FBSDKLoginKit: 30ba5039a2c53d65a75103889bc2deebdacd5a1f
+  FBSDKShareKit: 5a0021c30abb64df9eeba87351dd8a627874543b
   Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
   FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
@@ -276,7 +350,12 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  react-native-fbsdk: d5f98cc5abecbcc463e3c35c04743d716d002d37
+  react-native-fetch-blob: 63394b1d7b0781547b3e4463b3195790177b1222
+  react-native-image-picker: f42de90075c5b1af53417af927631d909a1a746e
+  yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 81e61cb80d12a845186cac8b790b122df6fdab1d
+PODFILE CHECKSUM: 7e9be49e1731c0b5985972792042e12c94bd8fbf
 
 COCOAPODS: 1.5.3

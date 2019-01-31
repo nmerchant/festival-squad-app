@@ -32,4 +32,13 @@ target 'festivalsquad' do
 
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
+  pod 'FBSDKLoginKit'
+
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'DevSupport',
+    'RCTNetwork'
+  ]
+
+  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+
 end
