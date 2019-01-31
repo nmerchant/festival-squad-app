@@ -4,6 +4,8 @@ import { SocialIcon, Button, Avatar } from 'react-native-elements';
 import firebase from 'react-native-firebase';
 import moment from 'moment';
 
+import CreateCommentContainer from './create-comment-container';
+
 const styles = require('../../styles/styles');
 
 export default class Post extends Component {
@@ -12,6 +14,7 @@ export default class Post extends Component {
 
         this.doc = this.props.doc;
         this.db = firebase.firestore();
+        this.user = this.props.user;
 
         this.state = {
             loading: true,
@@ -63,6 +66,9 @@ export default class Post extends Component {
                     </View>
                 </View>
                 <Text style={[styles.bodyText, {fontSize}]}>{this.state.text}</Text>
+                <CreateCommentContainer
+                    user={this.user}
+                />
             </View>
         )
     }

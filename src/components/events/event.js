@@ -137,7 +137,11 @@ export default class EventScreen extends Component {
                         openCreatePostScreen={this.openCreatePostScreen}
                         user={this.screenProps.user}
                     />
-                    <Posts eventDocRef={this.eventDocRef} ref={(child) => { this.postsComponent = child; }} />
+                    <Posts
+                        eventDocRef={this.eventDocRef}
+                        ref={(child) => { this.postsComponent = child; }}
+                        user={this.screenProps.user}
+                    />
                 </View>
             </ScrollView>
         );

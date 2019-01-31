@@ -35,7 +35,7 @@ export default class Posts extends Component {
             <View style={[styles.baseStyle]}>
                 {this.state.posts.map((doc) => {
                     const data = doc;
-                    return <Post key={data.id} doc={data} />
+                    return <Post key={data.id} doc={data} user={this.props.user} />
                 })}
             </View>
         )

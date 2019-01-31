@@ -5,15 +5,16 @@ import firebase from 'react-native-firebase';
 
 const styles = require('../../styles/styles');
 
-export default class CreatePostButton extends Component {
+export default class CreateCommentContainer extends Component {
     constructor(props) {
         super(props);
 
         this.state = {};
+
+        this.screenProps = this.props.screenProps;
     }
 
     componentDidMount() {
-    console.log(this.props.user);
         if (!this.props.user.picture) {
             this.setState({ picture: this.props.user.facebookPicture || '' });
             return;
@@ -56,13 +57,25 @@ export default class CreatePostButton extends Component {
                     flex: 1,
                     marginTop: 5
                 }}>
-                    <Text style={[styles.bodyText, {color: '#9a9ba0'}]}>New post...</Text>
+                    <TextInput style={[styles.bodyText, {
+                        padding: 0,
+                        paddingTop: 10,
+                        fontSize: this.state.fontSize
+                    }]}
+                        placeholder="Add Comment"
+                        value={this.state.text}
+                        multiline={true}
+                        onChangeText={this.onChangeText}
+                        placeholderTextColor="#9a9ba0"
+                        underlineColorAndroid="transparent"
+                        maxLength={1000}>
+                    </TextInput>
                 </View>
             </TouchableOpacity>
         )
     }
 
     onPress = () => {
-        this.props.openCreatePostScreen();
+        console.log('post comment: ', this.state.text);
     }
 };

@@ -33,7 +33,7 @@ var styles = StyleSheet.create({
         backgroundColor: colors.vybeGreen
     },
     bodyText: {
-        fontFamily: 'Roboto',
+        // fontFamily: 'Lato-Bold',
         color: 'white',
         letterSpacing: 1.5
     },
