@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Text, View, Image, ActivityIndicator, FlatList } from 'react-native';
 import { SocialIcon, Button, Avatar, Card } from 'react-native-elements';
-import firebase from 'react-native-firebase';
 import { StackRouter } from 'react-navigation';
+import firebase from 'react-native-firebase';
 
 import EventListScreen from './event-list';
 
@@ -19,8 +19,6 @@ export default class EventScreen extends Component {
         this.state ={
             loading: true
         };
-
-        this.fetchEvents = this.fetchEvents.bind(this);
     }
 
     render() {
@@ -38,7 +36,7 @@ export default class EventScreen extends Component {
         )
     }
 
-    fetchEvents(params, callback) {
+    fetchEvents = (params, callback) => {
         let filtering = false;
 
         if (params) {

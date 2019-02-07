@@ -96,6 +96,7 @@ new RNFirebasePackage(),
 
 * React Native Elements: https://github.com/react-native-training/react-native-elements/
 * UI Kits: https://ui8.net/categories/ui-kits
+* Press & Hold Actions: https://codedaily.io/tutorials/24/React-Native-Press-and-Hold-Button-Actions
 
 ### Music Integration
 

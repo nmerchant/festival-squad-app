@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native';
-import { SocialIcon, Button, Avatar } from 'react-native-elements';
+import { SocialIcon, Button, Avatar, Icon } from 'react-native-elements';
 import firebase from 'react-native-firebase';
 import moment from 'moment';
+
+import AddReactionButton from './add-reaction-button';
+import CreatePostButton from './create-post-button';
 
 const styles = require('../../styles/styles');
 
@@ -63,6 +66,7 @@ export default class Post extends Component {
                     </View>
                 </View>
                 <Text style={[styles.bodyText, {fontSize}]}>{this.state.text}</Text>
+                <AddReactionButton />
             </View>
         )
     }

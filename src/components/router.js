@@ -10,6 +10,7 @@ import AdminScreen from './admin/admin';
 import CreatePostScreen from './posts/create-post';
 import EventsScreen from './events/events';
 import EventScreen from './events/event';
+import TicketScreen from './tickets/tickets'
 
 import logo from '../images/logo.png';
 import logoGray from '../images/logo.png';
@@ -47,6 +48,9 @@ export const MainNavigator = TabNavigator({
         },
         Profile: {
             screen: ProfileScreen
+        },
+        Tickets: {
+            screen: TicketScreen
         }
     }),
     Explore: {

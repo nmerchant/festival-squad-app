@@ -51,6 +51,20 @@ var styles = StyleSheet.create({
         opacity: 0.2,
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    reactionContainer: {
+        borderWidth: 1,
+        borderColor: '#7f7f7f',
+        borderRadius: 10,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex: 1,
+    },
+    reaction: {
+        color: 'white',
+        padding: 3,
+        fontSize: 18
     }
 });
 

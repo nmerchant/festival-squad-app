@@ -91,7 +91,7 @@ export default class EventScreen extends Component {
                             <Text h3 style={[styles.bodyText, {fontSize: 23, color: 'white', width: 300}]}>{name}</Text>
                             <View style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 6 }}>
                                     <Text style={[styles.bodyText, {
-                                        fontSize: 16,
+                                        fontSize: 14,
                                         marginTop: 1
                                     }]}>{dates}</Text>
                             </View>
@@ -111,6 +111,14 @@ export default class EventScreen extends Component {
                         </View>
                         <View style={{flex: 1, alignItems: 'flex-end', marginBottom: 10}}>
                             <View style={{flexDirection: 'row', width: 80, justifyContent: 'flex-end', marginBottom: 10, marginTop: 5}}>
+                                <Icon containerStyle={{marginRight: 10}}
+                                    name='ticket'
+                                    type='material-community'
+                                    color='#e1183d'
+                                    onPress={this.openTicketScreen}
+                                    underlayColor='#1E1A2A'
+                                    size={28}
+                                />
                                 <Icon containerStyle={{marginRight: 10}}
                                     name={this.state.isAttending ? 'calendar-check' : 'calendar-blank'}
                                     type='material-community'
@@ -237,7 +245,6 @@ export default class EventScreen extends Component {
     }
 
     openProfileScreen = (user) => {
-        console.log(user);
         this.props.navigation.navigate('Profile', {
             user: user
         });
@@ -255,6 +262,12 @@ export default class EventScreen extends Component {
         this.fetchData(() => {
             this.props.navigation.goBack(null);
             this.postsComponent.fetchPosts();
+        });
+    }
+
+    openTicketScreen = () => {
+        this.props.navigation.navigate('Tickets', {
+
         });
     }
 };

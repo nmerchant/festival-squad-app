@@ -10,8 +10,6 @@ export default class CreatePostButton extends Component {
         super(props);
 
         this.state = {};
-
-        this.onPress = this.onPress.bind(this);
     }
 
     componentDidMount() {
@@ -64,7 +62,7 @@ export default class CreatePostButton extends Component {
         )
     }
 
-    onPress() {
+    onPress = () => {
         this.props.openCreatePostScreen();
     }
 };

@@ -21,7 +21,8 @@ export default class LoginScreen extends Component {
                 </Image>
                 <SocialIcon
                     style={{
-                        width: 225
+                        width: 225,
+                        marginTop: 50
                     }}
                     title='Sign In With Facebook'
                     button
