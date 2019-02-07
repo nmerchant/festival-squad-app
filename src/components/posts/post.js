@@ -15,6 +15,7 @@ export default class Post extends Component {
 
         this.doc = this.props.doc;
         this.db = firebase.firestore();
+        this.user = this.props.user;
 
         this.state = {
             loading: true,
