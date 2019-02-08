@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity, Animated } from 'react-native';
 import { SocialIcon, Button, Avatar, Icon } from 'react-native-elements';
 import firebase from 'react-native-firebase';
+import Popover from 'react-native-popover-view';
 
 import ReactionContainer from './reactions/reaction-container';
 
@@ -12,20 +13,21 @@ export default class AddReactionButton extends Component {
         super(props);
 
         this.state = {
-            showReactionContaier: false
+            showReactionContainer: false
         };
     }
 
     render() {
         let reactionContainer = null;
 
-        if (this.state.showReactionContaier) {
+        if (this.state.showReactionContainer) {
             reactionContainer = <ReactionContainer />;
         }
 
         return (
             <View>
                 <TouchableOpacity
+                    ref={ref => this.touchable = ref}
                     onPress={this.onPress}
                     onLongPress={this.onLongPress}
                     onPressOut={this.onPressOut}
@@ -43,20 +45,34 @@ export default class AddReactionButton extends Component {
                          size={18}
                      />
                  </TouchableOpacity>
-                 {reactionContainer}
+                 <Popover
+                    isVisible={this.state.showReactionContainer}
+                    showInModal={false}
+                    placement='auto'
+                    onClose={() => this.closePopover()}>
+                    <ReactionContainer />
+                 </Popover>
             </View>
         )
     }
 
     onPress = () => {
-        console.log('react');
+        console.log('on press');
+        this.setState({showReactionContainer: false});
     }
 
     onLongPress = () => {
-        this.setState({showReactionContaier: true});
+        console.log('on long press');
+        this.setState({showReactionContainer: true});
     }
 
     onPressOut = () => {
+        console.log('on press out');
+        this.setState({showReactionContaier: false});
+    }
+
+    closePopover = () => {
+        console.log('close popover');
         this.setState({showReactionContaier: false});
     }
 };

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -61,6 +62,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.asList(
         new MainReactPackage(),
+            new RNGestureHandlerPackage(),
         new ImagePickerPackage(),
         new RNFetchBlobPackage(),
         new VectorIconsPackage(),

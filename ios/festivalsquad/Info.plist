@@ -66,6 +66,38 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Lato-Black.ttf</string>
+		<string>Lato-BlackItalic.ttf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-BoldItalic.ttf</string>
+		<string>Lato-Hairline.ttf</string>
+		<string>Lato-HairlineItalic.ttf</string>
+		<string>Lato-Italic.ttf</string>
+		<string>Lato-Light.ttf</string>
+		<string>Lato-LightItalic.ttf</string>
+		<string>Lato-Regular.ttf</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-SemiBold.ttf</string>
+		<string>OpenSans-SemiBoldItalic.ttf</string>
+		<string>Roboto-Black.ttf</string>
+		<string>Roboto-BlackItalic.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-BoldItalic.ttf</string>
+		<string>Roboto-Italic.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-LightItalic.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-MediumItalic.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Thin.ttf</string>
+		<string>Roboto-ThinItalic.ttf</string>
 	</array>
 </dict>
 </plist>
