@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from 'react-native';
 import { Icon } from 'react-native-elements';
-import { TabNavigator, TabBarBottom, StackNavigator } from 'react-navigation';
+import { createBottomTabNavigator, BottomTabBar, createStackNavigator } from 'react-navigation';
 
 import SplashScreen from './splash';
 import ProfileScreen from './profile';
@@ -18,8 +18,8 @@ const styles = require('../styles/styles');
 const colors = require('../styles/colors');
 
 
-export const MainNavigator = TabNavigator({
-    Account: StackNavigator({
+export const MainNavigator = createBottomTabNavigator({
+    Account: createStackNavigator({
         Profile: {
             screen: ProfileScreen,
             navigationOptions: {
@@ -33,7 +33,7 @@ export const MainNavigator = TabNavigator({
             screen: EditProfileScreen
         }
     }),
-    Events: StackNavigator({
+    Events: createStackNavigator({
         EventList: {
             screen: EventsScreen,
             navigationOptions: {
@@ -63,7 +63,7 @@ export const MainNavigator = TabNavigator({
         screen: SplashScreen
     }
 }, {
-    navigationOptions: ({ navigation }) => ({
+    defaultNavigationOptions: ({ navigation }) => ({
         tabBarIcon: (options) => {
             const { routeName } = navigation.state;
             let { tintColor } = options;
@@ -120,10 +120,6 @@ export const MainNavigator = TabNavigator({
             backgroundColor: colors.navbarBackground
         }
     },
-    tabBarComponent: TabBarBottom,
-    tabBarPosition: 'bottom',
-    animationEnabled: true,
-    swipeEnabled: true,
     lazy: false,
     initialRouteName: 'Events'
 });

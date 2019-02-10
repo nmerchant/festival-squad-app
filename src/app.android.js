@@ -18,11 +18,14 @@ import {
     GraphRequest,
     GraphRequestManager
 } from 'react-native-fbsdk';
+import { createAppContainer } from 'react-navigation';
 import firebase from 'react-native-firebase';
 
 import LoginScreen from './components/login';
 import SplashScreen from './components/splash';
 import { MainNavigator } from './components/router';
+
+const AppContainer = createAppContainer(MainNavigator);
 
 const styles = require('./styles/styles');
 
@@ -58,7 +61,7 @@ class Vybe extends Component {
             );
         } else {
             console.log('rendering stuff', this.state.user);
-            return <MainNavigator screenProps={{
+            return <AppContainer screenProps={{
                 user: this.state.user,
                 facebookLogout: this.facebookLogout,
                 onGetFacebookLikes: this.onGetFacebookLikes,
