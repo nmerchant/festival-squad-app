@@ -271,7 +271,7 @@ export default class EventScreen extends Component {
 
     openTicketScreen = () => {
         this.props.navigation.navigate('Tickets', {
-
+            eventDoc: this.state.eventDoc
         });
     }
 };

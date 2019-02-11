@@ -45,13 +45,7 @@ export default class AddReactionButton extends Component {
                          size={18}
                      />
                  </TouchableOpacity>
-                 <Popover
-                    isVisible={this.state.showReactionContainer}
-                    showInModal={false}
-                    placement='auto'
-                    onClose={() => this.closePopover()}>
-                    <ReactionContainer />
-                 </Popover>
+                 {reactionContainer}
             </View>
         )
     }
@@ -68,11 +62,11 @@ export default class AddReactionButton extends Component {
 
     onPressOut = () => {
         console.log('on press out');
-        this.setState({showReactionContaier: false});
+        this.setState({showReactionContainer: false});
     }
 
     closePopover = () => {
         console.log('close popover');
-        this.setState({showReactionContaier: false});
+        this.setState({showReactionContainer: false});
     }
 };

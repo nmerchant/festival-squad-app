@@ -18,13 +18,8 @@ export default class EventListScreen extends Component {
         this.state = {
             loading: false,
             orderBy: this.props.orderBy || 'startDate',
-            viewType: this.props.viewType || 'thumbnail',
-            results: 0
+            viewType: this.props.viewType || 'thumbnail'
         };
-
-        this.onFilterChange = this.onFilterChange.bind(this);
-        this.rerender = this.rerender.bind(this);
-        this.fetch = this.fetch.bind(this);
     }
 
     render() {
@@ -74,7 +69,7 @@ export default class EventListScreen extends Component {
         );
     }
 
-    rerender(params) {
+    rerender = (params) => {
         this.setState({
             orderBy: params.orderBy,
             viewType: params.viewType,
@@ -83,7 +78,7 @@ export default class EventListScreen extends Component {
         });
     }
 
-    fetch() {
+    fetch = () => {
         this.onFilterChange({
             orderBy: this.state.orderBy,
             viewType: this.state.viewType,
@@ -92,12 +87,13 @@ export default class EventListScreen extends Component {
         });
     }
 
-    onFilterChange(data) {
+    onFilterChange = (data) => {
         this.setState({
             loading: true
         });
 
         this.props.fetchEvents(data, (params) => {
+            console.log('done loading');
             this.setState({
                 loading: false,
                 orderBy: params.orderBy,

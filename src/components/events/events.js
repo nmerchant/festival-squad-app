@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Image, ActivityIndicator, FlatList } from 'react-native';
+import { Text, View, Image, FlatList } from 'react-native';
 import { SocialIcon, Button, Avatar, Card } from 'react-native-elements';
 import { StackRouter } from 'react-navigation';
 import firebase from 'react-native-firebase';

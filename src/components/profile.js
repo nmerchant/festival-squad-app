@@ -130,7 +130,7 @@ export default class ProfileScreen extends Component {
                             extraData={this.state}
                             renderItem={(item) => {
                                 return (
-                                    <EventCard style={{marginBottom: 0, padding: 0}}
+                                    <EventCard style={{marginBottom: 0, padding: 0, marginLeft: 0, marginRight: 15}}
                                         navigation={this.props.navigation}
                                         data={item}
                                         user={this.user}
