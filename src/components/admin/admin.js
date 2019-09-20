@@ -87,7 +87,7 @@ export default class AdminScreen extends Component {
                     onRequestSuccess(null, data);
                 });
             } else {
-                this.screenProps.onGetFacebookLikes(likes);
+                console.log(likes);
             }
         };
 

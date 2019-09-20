@@ -64,7 +64,6 @@ class Vybe extends Component {
             return <AppContainer screenProps={{
                 user: this.state.user,
                 facebookLogout: this.facebookLogout,
-                onGetFacebookLikes: this.onGetFacebookLikes,
                 updateUserRecord: this.updateUserRecord
             }} />;
         }
@@ -209,13 +208,6 @@ class Vybe extends Component {
             if (callback) {
                 callback(doc.data());
             }
-        });
-    }
-
-    onGetFacebookLikes = (likes) => {
-        console.log('likes loaded: ', likes);
-        this.setState({
-            facebookLikes: likes
         });
     }
 }
