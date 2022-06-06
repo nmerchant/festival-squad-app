@@ -1,5 +1,7 @@
 # Festival Squad - iOS & Android App
 
+### This is old app I was developing using React Native and Firebase.  It's no longer in development, but feel free to reference my code if it's of any use to you!
+
 ## Project Docs
 
 * Notes: https://docs.google.com/document/d/1X9YFI7v6G4ffim3kHX0XRGTfYknMmNwBD42iO4xVXJM/edit?usp=sharing
