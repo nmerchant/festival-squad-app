@@ -74,7 +74,7 @@ new RNFirebasePackage(),
 * Firebase Firestore authentication / security: https://firebase.google.com/docs/firestore/security/overview
 * Firebase offline sync: https://firebase.google.com/docs/firestore/manage-data/enable-offline
 * Paging for all routes that may eventually need it (i.e. user friends)
-* I want to track a list of events I'm going to, but I also want a # of users going for each event.  Currently writing transactions to store rsvp to user object and increment counter on event object.  This means data modified / deleted from user record would create concurrency problems.  But maybe this should fully tie this to the event object?
+* I want to track a list of events I'm going to, but I also want a # of users going for each event.  Currently writing transactions to store rsvp to user object and increment counter on event object.  This means data modified / deleted from user record would create concurrency problems.  But maybe this should fully tie this to the event object? (this is why we want to use a SQL db...relational data needs a relational db)
 * What can we use cloud functions for?
 * Figure out why `android/gradlew clean` doesn't work.  Have to `cd android && ./gradlew clean`
 
