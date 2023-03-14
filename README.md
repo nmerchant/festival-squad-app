@@ -1,6 +1,6 @@
 # [ARCHIVED] Festival Squad - iOS & Android App
 
-### This is old app I was developing using React Native and Firebase.  It's no longer in development, but feel free to reference my code if it's of any use to you!
+### This is an old app I was developing using React Native and Firebase.  It's no longer in development, but feel free to reference my code if it's of any use to you!
 
 ## Project Docs
 
